@@ -651,6 +651,27 @@ html, body{
   margin-top: 20px;
 }
 
+/* Swiper Slider */
+.swiper-container{
+  padding-bottom: 80px;
+}
+
+.swiper-pagination-bullet{
+  width: 10px;
+  height: 10px;
+  border-radius: 0;
+  transition: all .2s;
+}
+
+.swiper-pagination-bullet-active{
+  background: #959597;
+  width: 45px;
+  height: 5px;
+  border-radius: 0;
+}
+
+
+
 /* Responsive Desktop */
 @media (min-width: 992px) {
   /* Body */
@@ -689,6 +710,7 @@ html, body{
 
   .amz-img{
     margin-bottom: 0;
+    filter: drop-shadow( 1px 1px 15px rgba(0, 0, 0, 0.3));
   }
 
   /* Section Features Second */
@@ -734,7 +756,7 @@ html, body{
   /* Review Section */
   #Review{
     padding-top: 200px;
-    padding-bottom: 250px;
+    padding-bottom: 150px;
   }
 
   /* App Section */
@@ -759,5 +781,10 @@ html, body{
 
   .copyright{
     margin-top: 100px;
+  }
+
+  /* Swiper slide */
+  .swiper-container{
+    padding-bottom: 150px;
   }
 }

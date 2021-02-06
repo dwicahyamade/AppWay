@@ -9,6 +9,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Swiper Stylee -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- My STyle -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -314,25 +316,32 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
-            <div class="review-bg text-center">
-              <img src="assets/img/testimonial-1.png" alt="AppWay" class="review-thumb">
-              <p class="sub-title">"We dont take ourself too seriously, but seriously enough to ensure we're creating
-                the best product and experience for our customers. I feel like Help Scout does the same."</p>
-              <hr class="separator">
-              <p class="job-title">TEAMSNAP</p>
-              <p class="job-desc">VP of Customer Experience</p>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="review-bg text-center">
+                  <img src="assets/img/testimonial-1.png" alt="AppWay" class="review-thumb">
+                  <p class="sub-title">"We dont take ourself too seriously, but seriously enough to ensure we're
+                    creating
+                    the best product and experience for our customers. I feel like Help Scout does the same."</p>
+                  <hr class="separator">
+                  <p class="job-title">TEAMSNAP</p>
+                  <p class="job-desc">VP of Customer Experience</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-bg text-center">
+                  <img src="assets/img/testimonial-2.png" alt="AppWay" class="review-thumb">
+                  <p class="sub-title">"We dont take ourself too seriously, but seriously enough to ensure we're
+                    creating
+                    the best product and experience for our customers. I feel like Help Scout does the same."</p>
+                  <hr class="separator">
+                  <p class="job-title">STEVEN SMITH</p>
+                  <p class="job-desc">Programmer Doritibe</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="review-bg text-center">
-              <img src="assets/img/testimonial-2.png" alt="AppWay" class="review-thumb">
-              <p class="sub-title">"We dont take ourself too seriously, but seriously enough to ensure we're creating
-                the best product and experience for our customers. I feel like Help Scout does the same."</p>
-              <hr class="separator">
-              <p class="job-title">STEVEN SMITH</p>
-              <p class="job-desc">Programmer Doritibe</p>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -507,6 +516,8 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="vendor/lightcase-2.5.0/src/js/lightcase.js"></script>
+  <!-- Swiper Js -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 

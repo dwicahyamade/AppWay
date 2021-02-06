@@ -90,7 +90,7 @@ html, body{
 }
 
 /* Hero */
-.jumbotron{
+.hero{
   background-color: white;
   background-image: url(../img/banner-1.png);
   background-size: cover;
@@ -100,7 +100,7 @@ html, body{
   position: relative;
 }
 
-.jumbotron::after{
+.hero::after{
   content: '';
   display: block;
   background-image: url(../img/vactor-1.png);
@@ -111,7 +111,7 @@ html, body{
   height: 100%;
 }
 
-.jumbotron .title-hero{
+.hero .title-hero{
   margin-top: 50px;
   font-size: 24px;
   font-weight: 500;
@@ -119,14 +119,14 @@ html, body{
   color: white;
 }
 
-.jumbotron .sub-title-hero{
+.hero .sub-title-hero{
   margin-top: 25px;
   color: white;
   font-weight: 500;
   line-height: 2em;
 }
 
-.jumbotron .container{
+.hero .container{
   position: relative;
   z-index: 1;
 }
@@ -294,7 +294,7 @@ html, body{
 .video-bg::before{
   content: '';
   border: 6px solid #FFFFFF;
-  background-color: #4527A4;
+  background-color: rgba(68, 39, 164, 0.5);
   border-radius: 50%;
   position: absolute;
   z-index: 5;
@@ -483,11 +483,11 @@ html, body{
 
 /* Review */
 #Review{
-  padding-top: 200px;
+  padding-top: 80px;
   background-image: url(../img/testimonial-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 }
 
 .review-bg{
@@ -550,6 +550,107 @@ html, body{
   color: #777777;
 }
 
+/* Section App */
+.app{
+  background-image: url(../img/shap-3.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom left;
+  background-color: #4527A4;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.title-app{
+  color: #FFFFFF;
+}
+
+.app .separator{
+  margin: 1rem 0;
+  border-color: #FFFFFF;
+}
+
+.sub-title-app{
+  color: #FFFFFF;
+  font-size: 1.1em;
+  line-height: 2em;
+}
+
+.app .btn{
+  padding: 10px 20px;
+  max-width: 100%;
+}
+
+.button-app{
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.phone-app-1{
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow( 1px 1px 15px rgba(0, 0, 0, 0.116));
+}
+
+.phone-app-2{
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* News Section */
+#News{
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.card-news{
+  box-shadow: none;
+}
+
+.card-news .card-body{
+  padding: 1.5rem 0;
+}
+
+/* Section Subscribe */
+.form-subscribe{
+  border-radius: 30px;
+  padding: 1.5em;
+}
+
+/* Footer */
+#Footer{
+  padding: 80px 0 10px 0;
+  background-image: url(../img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.footer-info{
+  line-height: 2em;
+}
+
+.footer-title{
+  font-size: 1.3em;
+}
+
+.footer-col .sub-title{
+  margin: 20px 0;
+}
+
+.footer .separator{
+  margin-top: 0;
+  border-color: #4527A4;
+  border-width: 1px;
+}
+
+.copyright{
+  margin-top: 20px;
+}
+
 /* Responsive Desktop */
 @media (min-width: 992px) {
   /* Body */
@@ -567,16 +668,16 @@ html, body{
   }
   
   /* Hero */
-  .jumbotron{
+  .hero{
     margin-top: -160px;
     height: 1030px;
   }
 
-  .jumbotron .title-hero{
+  .hero .title-hero{
     font-size: 48px;
   }
 
-  .jumbotron .container{
+  .hero .container{
     margin-top: 270px;
   }
 
@@ -628,5 +729,35 @@ html, body{
   /* Section Price switch button */
   .monthly-switch{
     padding-top: 70px;
+  }
+
+  /* Review Section */
+  #Review{
+    padding-top: 200px;
+    padding-bottom: 250px;
+  }
+
+  /* App Section */
+  .app{
+    padding-top: 150px;
+    padding-bottom: 0;
+  }
+
+  /* Subscription Section */
+  #Subscribe{
+    padding-bottom: 100px;
+  }
+
+  /* Footer */
+  #Footer{
+    padding: 150px 0 20px 0;
+  }
+  
+  .footer{
+    padding-top: 150px;
+  }
+
+  .copyright{
+    margin-top: 100px;
   }
 }

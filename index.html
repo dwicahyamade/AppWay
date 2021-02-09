@@ -211,6 +211,10 @@
     <section id="Video">
       <div class="row align-items-center">
         <div class="col-12 col-lg-7 video-bg">
+          <a href="https://www.youtube.com/embed/hlWiI4xVXKY" data-rel="lightcase">
+            <div class="play-button">
+            </div>
+          </a>
         </div>
         <div class="col-lg-5 video-text-bg">
           <div class="video-text">
@@ -218,7 +222,8 @@
             <hr class="separator">
             <p class="sub-title">Retarget past customers with second chance offers and reach new audience with geo
               targeted campaign during peak dining times using Forks' push notifications.</p>
-            <a href="#" class="btn btn-primary mt-5">Play Video Now</a>
+            <a href="https://www.youtube.com/embed/hlWiI4xVXKY" data-rel="lightcase" class="btn btn-primary mt-5">Play
+              Video Now</a>
           </div>
         </div>
       </div>
@@ -311,7 +316,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
             <h2 class="title">Our Users Review</h2>
-            <hr class="separator">
+            <hr class="separator-middle">
             <p class="sub-title">Trusted by more than 9.000 business in 140 countries, all of our resources are free</p>
           </div>
         </div>
@@ -327,6 +332,17 @@
                   <hr class="separator">
                   <p class="job-title">TEAMSNAP</p>
                   <p class="job-desc">VP of Customer Experience</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-bg text-center">
+                  <img src="assets/img/testimonial-2.png" alt="AppWay" class="review-thumb">
+                  <p class="sub-title">"We dont take ourself too seriously, but seriously enough to ensure we're
+                    creating
+                    the best product and experience for our customers. I feel like Help Scout does the same."</p>
+                  <hr class="separator">
+                  <p class="job-title">STEVEN SMITH</p>
+                  <p class="job-desc">Programmer Doritibe</p>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -360,24 +376,26 @@
               </p>
               <div class="row text-center">
                 <div class="col-12 col-lg-5">
-                  <a href="#" class="btn btn-primary mt-5 button-app text-left">
+                  <button type="button" class="btn btn-primary mt-5 button-app text-left" data-toggle="modal"
+                    data-target="#modalApp">
                     <div class="row justify-content-between">
                       <div class="col-3 col-lg-3"><i class="fab fa-apple fa-3x"></i></div>
                       <div class="col-9 col-lg-9"><small>Download on the</small>
                         <br> App Store
                       </div>
                     </div>
-                  </a>
+                  </button>
                 </div>
                 <div class="col-lg-5">
-                  <a href="#" class="btn btn-primary mt-5 button-app text-left">
+                  <button type="button" class="btn btn-primary mt-5 button-app text-left" data-toggle="modal"
+                    data-target="#modalGoo">
                     <div class="row justify-content-between">
                       <div class="col-3 col-lg-3"><i class="fab fa-android fa-3x"></i></div>
                       <div class="col-9 col-lg-8"><small>Get it On</small>
                         <br> Google Play
                       </div>
                     </div>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -389,6 +407,65 @@
         </div>
       </div>
     </section>
+    <!-- Modal Button -->
+    <div class="modal fade" id="modalApp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Download on the App Store</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <div class="col-8 col-lg-5 mb-3 mb-lg-0">
+                <img src="assets/img/phone-4.png" alt="AppWay" class="img-fluid">
+              </div>
+              <div class="col-12 col-lg-7">
+                <h2 class="title">Get the App Now</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam dolorem fugit beatae nihil nulla
+                  asperiores iste veritatis ab autem aut consequuntur adipisci ducimus, amet, exercitationem error.
+                  Voluptate vero cumque corporis!
+                </p>
+                <a href="#" class="btn btn-primary"><i class="fab fa-apple mr-2"></i>Download Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalGoo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Download on the Google Play</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <div class="col-8 col-lg-5 mb-3 mb-lg-0">
+                <img src="assets/img/phone-4.png" alt="AppWay" class="img-fluid">
+              </div>
+              <div class="col-12 col-lg-7">
+                <h2 class="title">Get the App Now</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam dolorem fugit beatae nihil nulla
+                  asperiores iste veritatis ab autem aut consequuntur adipisci ducimus, amet, exercitationem error.
+                  Voluptate vero cumque corporis!
+                </p>
+                <a href="#" class="btn btn-primary"><i class="fab fa-android mr-2"></i>Download Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- End Section App -->
     <!-- Section News -->
     <section id="News">
@@ -396,7 +473,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
             <h2 class="title">News & Events</h2>
-            <hr class="separator">
+            <hr class="separator-middle">
             <p class="sub-title">Trusted by more than 9.000 business in 140 countries, all of our resources are free</p>
           </div>
         </div>
@@ -464,29 +541,41 @@
               obcaecati non quaerat asperiores.
             </p>
             <br>
-            <p class="text-custom">Follow Us: <i class="fab fa-facebook-f text-secondary ml-4 mr-3"></i> <i
-                class="fab fa-twitter text-secondary mr-3"></i> <i class="fab fa-skype text-secondary mr-3"></i> <i
-                class="fab fa-linkedin-in text-secondary mr-3"></i></p>
+            <p class="text-custom">Follow Us:
+              <a href="#" class="footer-social"><i class="fab fa-facebook-f ml-4 mx-2"></i></a>
+              <a href="#" class="footer-social"><i class="fab fa-twitter mx-2"></i></a>
+              <a href="#" class="footer-social"><i class="fab fa-skype mx-2"></i></a>
+              <a href="#" class="footer-social"><i class="fab fa-linkedin-in mx-2"></i></a>
+            </p>
           </div>
           <div class="col-lg-3 footer-col mt-4">
             <h2 class="footer-title">Support</h2>
             <hr class="separator">
-            <p class="sub-title"><i class="fas fa-chevron-right"></i> Contact Us</p>
-            <p class="sub-title"><i class="fas fa-chevron-right"></i> Submit a Ticket</p>
-            <p class="sub-title"><i class="fas fa-chevron-right"></i> Visit Knowledge Base</p>
-            <p class="sub-title"><i class="fas fa-chevron-right"></i> Support System</p>
-            <p class="sub-title"><i class="fas fa-chevron-right"></i> Refund Policy</p>
-            <p class="sub-title"><i class="fas fa-chevron-right"></i> Profesional Services</p>
+            <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary"> Contact Us</a>
+            </p>
+            <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary">Submit a
+                Ticket</a></p>
+            <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary">Visit Knowledge
+                Base</a></p>
+            <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary">Support
+                System</a></p>
+            <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary">Refund
+                Policy</a></p>
+            <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary">Profesional
+                Services</a></p>
           </div>
           <div class="col-lg-2 footer-col mt-4">
             <h2 class="footer-title">Links</h2>
             <hr class="separator">
-            <p class="sub-title"><i class="fas fa-chevron-right"></i> Home</p>
-            <p class="sub-title"><i class="fas fa-chevron-right"></i> Services</p>
-            <p class="sub-title"><i class="fas fa-chevron-right"></i> Price Plan</p>
-            <p class="sub-title"><i class="fas fa-chevron-right"></i> Testimonials</p>
-            <p class="sub-title"><i class="fas fa-chevron-right"></i> News</p>
-            <p class="sub-title"><i class="fas fa-chevron-right"></i> Contact</p>
+            <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary">Home</a></p>
+            <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary">Services</a>
+            </p>
+            <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary">Price Plan</a>
+            </p>
+            <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#"
+                class="text-secondary">Testimonials</a></p>
+            <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary">News</a></p>
+            <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary">Contact</a></p>
           </div>
           <div class="col-lg-3 footer-col mt-4">
             <h2 class="footer-title">Contact Info</h2>

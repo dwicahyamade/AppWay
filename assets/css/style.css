@@ -5,9 +5,15 @@ body{
   padding-top: 70px;
 }
 
-html, body{
+html, body, header{
   overflow-x: hidden;
+  padding-right: 0 !important;
 }
+
+.navbar{
+  padding-right: 0 !important;
+}
+
 
 .btn{
   border-radius: 30px;
@@ -62,7 +68,37 @@ html, body{
 .separator{
   display: inline-block;
   margin: 30px 0 0 0;
-  width: 17%;
+  width: 25%;
+  border: 1px solid #CCCCCC;
+  position: relative;
+}
+
+.separator::after{
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  display: inline-block;
+  width: 35%;
+  border: 2px solid #777777;
+}
+
+.separator-middle{
+  display: inline-block;
+  margin: 30px 0 0 0;
+  width: 20%;
+  border: 1px solid #CCCCCC;
+  position: relative;
+}
+
+.separator-middle::after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 35%;
   border: 2px solid #777777;
 }
 
@@ -291,8 +327,7 @@ html, body{
   height: 100%;
 }
 
-.video-bg::before{
-  content: '';
+.play-button{
   border: 6px solid #FFFFFF;
   background-color: rgba(68, 39, 164, 0.5);
   border-radius: 50%;
@@ -304,6 +339,32 @@ html, body{
   width: 150px;
   height: 150px;
 }
+
+.play-button::after{
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 50px solid rgb(255, 255, 255);
+  border-bottom: 25px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* .video-bg::before{
+  content: '';
+  border: 6px solid #FFFFFF;
+  background-color: rgba(68, 39, 164, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+} */
 
 .video-text-bg{
   background-color: #F9F9F9;
@@ -540,6 +601,10 @@ html, body{
   border: 1px solid #777777;
 }
 
+.review-bg .separator::after{
+  display: none;
+}
+
 .job-title{
   font-weight: 500;
   padding-top: 20px;
@@ -568,6 +633,10 @@ html, body{
 
 .app .separator{
   margin: 1rem 0;
+  border-color: #FFFFFF;
+}
+
+.app .separator::after{
   border-color: #FFFFFF;
 }
 
@@ -608,10 +677,15 @@ html, body{
 
 .card-news{
   box-shadow: none;
+  transition: all .5s;
 }
 
 .card-news .card-body{
   padding: 1.5rem 0;
+}
+
+.card-news:hover{
+  transform: scale(1.1);
 }
 
 /* Section Subscribe */
@@ -647,8 +721,24 @@ html, body{
   border-width: 1px;
 }
 
+.footer .separator::after{
+  top: -1px;
+  left: 110%;
+  width: 10px;
+  border-color: #4527A4;
+  border-width: 1px;
+}
+
 .copyright{
   margin-top: 20px;
+}
+
+.footer-social{
+  color: #6c757d;
+}
+
+.footer-social:hover{
+  color: #4527A4;
 }
 
 /* Swiper Slider */
@@ -669,8 +759,6 @@ html, body{
   height: 5px;
   border-radius: 0;
 }
-
-
 
 /* Responsive Desktop */
 @media (min-width: 992px) {

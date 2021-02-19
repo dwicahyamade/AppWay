@@ -14,8 +14,8 @@
   <!-- My STyle -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="vendor/lightcase-2.5.0/src/css/lightcase.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/lightcase.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>AppWay</title>
 </head>
 
@@ -24,7 +24,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-custom" id="header">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets/img/logo.png" class="img-fluid" alt="AppWay">
+          <img src="img/logo.png" class="img-fluid" alt="AppWay">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,20 +48,20 @@
     <section id="Hero">
       <div class="jumbotron hero jumbotron-fluid">
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-6 order-lg-1 order-2">
-              <h1 class="title-hero">Profect App For Boost Your Business</h1>
-              <p class="sub-title-hero">The collapse of the online-advertising market in 2001 made marketing on the
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-6 order-lg-1 order-1 mt-n5 mt-lg-0">
+              <h1 class="hero-title">Profect App For Boost Your Business</h1>
+              <p class="hero-sub-title">The collapse of the online-advertising market in 2001 made marketing on the
                 internet
                 seem even less compelling
               </p>
               <a href="#" class="btn btn-primary mt-5">Get App Now</a>
             </div>
-            <div class="col-12 col-lg-6 order-lg-2 order-1 hero-img">
-              <img src="assets/img/phone-1.png" class="img-fluid phone-1" alt="AppWay">
-              <img src="assets/img/phone-2.png" class="img-fluid phone-2" alt="AppWay">
-              <!-- <img src="assets/img/phone-1.png" class="img-fluid phone" alt="AppWay"> -->
-              <!-- <img src="assets/img/phone-2.png" class="img-fluid phone2" alt="AppWay"> -->
+            <div class="col-12 col-lg-6 order-lg-2 order-2 hero-img mt-5 mt-lg-0">
+              <img src="img/phone-1.png" class="phone-1" alt="AppWay">
+              <img src="img/phone-2.png" class="phone-2" alt="AppWay">
+              <!-- <img src="img/phone-1.png" class="img-fluid phone" alt="AppWay"> -->
+              <!-- <img src="img/phone-2.png" class="img-fluid phone2" alt="AppWay"> -->
             </div>
           </div>
         </div>
@@ -71,19 +71,20 @@
     <!-- Features -->
     <section id="Features">
       <div class="container">
-        <div class="row justify-content-center justify-content-lg-between ">
-          <div class="col-8 col-lg-5"><img src="assets/img/phone-3.png" class="img-fluid amz-img" alt="AppWay">
+        <div class="row justify-content-center justify-content-lg-between">
+          <div class="col-8 col-lg-5 order-lg-1 order-2 mt-3 mt-lg-0"><img src="img/phone-3.png"
+              class="img-fluid amz-img" alt="AppWay">
           </div>
-          <div class="col-lg-7">
+          <div class="col-lg-7 order-lg-2 order-1">
             <h2 class="title">Amazing Features</h2>
             <hr class="separator">
             <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, non! Quos, earum
               molestiae.</p>
             <div class="row mt-5">
               <div class="col-lg-6 pb-4">
-                <div class="card bg-custom text-white card-features">
+                <div class="card card-features">
                   <div class="card-body card-body-features">
-                    <i class="fas fa-mobile-alt fa-4x"></i>
+                    <i class="fas fa-mobile-alt fa-4x text-custom"></i>
                     <h5 class="card-title">Unique Design</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat officiis
                       aliquam, quos dolorum ullam deleniti sequi consequatur.</p>
@@ -130,17 +131,17 @@
     <section id="Features-second">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
-            <div class="card card-features-second bg-custom text-white">
+          <div class="col-lg-4 pb-4">
+            <div class="card card-features-second">
               <div class="card-body text-center">
-                <i class="fas fa-mobile-alt fa-4x text-danger fa-custom-circle"></i>
+                <i class="fas fa-mobile-alt fa-4x text-custom"></i>
                 <h5 class="card-title">Flexiable to Use</h5>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, officiis iusto?
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 pb-4">
             <div class="card card-features-second card-middle">
               <div class="card-body text-center">
                 <i class="fas fa-tablet-alt fa-4x text-custom"></i>
@@ -149,7 +150,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 pb-4">
             <div class="card card-features-second">
               <div class="card-body text-center">
                 <i class="fas fa-cogs fa-4x text-custom"></i>
@@ -167,7 +168,7 @@
     <section id="Mobile">
       <div class="container">
         <div class="row justify-content-lg-between align-items-center">
-          <div class="col-lg-4 order-lg-1 order-2">
+          <div class="col-lg-5 order-lg-1 order-1">
             <h2 class="title">Mobile Aplication Redifined</h2>
             <hr class="separator">
             <p class="sub-title">On the other hand we denounce with righteous indignation and dislike men who are so
@@ -175,11 +176,11 @@
             <p class="sub-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex enim quia ipsa?</p>
             <a href="#" class="btn btn-outline-primary btn-learn">Learn More</a>
           </div>
-          <div class="col-lg-7 order-lg-2 order-1 mobile-img">
-            <img src="assets/img/shap-1.png" class="shap-1 img-fluid" alt="AppWay">
-            <img src="assets/img/image-shap-1.png" class="img-shap-1 img-fluid" alt="AppWay">
-            <img src="assets/img/dashbord-1.jpg" class="dashbord-1 img-fluid" alt="AppWay">
-            <img src="assets/img/dashbord-2.jpg" class="dashbord-2 img-fluid" alt="AppWay">
+          <div class="col-lg-7 order-lg-2 order-2 mobile-img mt-5 mt-lg-0">
+            <img src="img/shap-1.png" class="shap-1 img-fluid" alt="AppWay">
+            <img src="img/image-shap-1.png" class="img-shap-1 img-fluid" alt="AppWay">
+            <img src="img/dashbord-1.jpg" class="app-img-front img-fluid" alt="AppWay">
+            <img src="img/dashbord-2.jpg" class="app-img-back img-fluid" alt="AppWay">
           </div>
         </div>
       </div>
@@ -189,13 +190,13 @@
     <section id="Easy">
       <div class="container">
         <div class="row justify-content-lg-between align-items-center">
-          <div class="col-lg-7 easy-img">
-            <img src="assets/img/shap-1.png" class="shap-2 img-fluid" alt="AppWay">
-            <img src="assets/img/image-shap-2.png" class="img-shap-2 img-fluid" alt="AppWay">
-            <img src="assets/img/dashbord-3.jpg" class="dashbord-3 img-fluid" alt="AppWay">
-            <img src="assets/img/dashbord-4.jpg" class="dashbord-4 img-fluid" alt="AppWay">
+          <div class="col-lg-7 easy-img order-lg-1 order-2 mt-5 mt-lg-0">
+            <img src="img/shap-1.png" class="shap-2 img-fluid" alt="AppWay">
+            <img src="img/image-shap-2.png" class="img-shap-2 img-fluid" alt="AppWay">
+            <img src="img/dashbord-3.jpg" class="dashbord-3 img-fluid" alt="AppWay">
+            <img src="img/dashbord-4.jpg" class="dashbord-4 img-fluid" alt="AppWay">
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 order-lg-1 order-1">
             <h2 class="title">Easy access to business information</h2>
             <hr class="separator">
             <p class="sub-title">On the other hand we denounce with righteous indignation and dislike men who are so
@@ -210,10 +211,11 @@
     <!-- Section Video -->
     <section id="Video">
       <div class="row align-items-center">
-        <div class="col-12 col-lg-7 video-bg">
-          <a href="https://www.youtube.com/embed/hlWiI4xVXKY" data-rel="lightcase">
-            <div class="play-button">
-            </div>
+        <div class="col-12 col-lg-7">
+          <div class="video-bg">
+            <img src="img/video-bg.jpg" alt="">
+          </div>
+          <a href="https://www.youtube.com/embed/hlWiI4xVXKY" data-rel="lightcase" class="play-button">
           </a>
         </div>
         <div class="col-lg-5 video-text-bg">
@@ -233,14 +235,12 @@
     <section id="Prices">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
+          <div class="col-lg-12 text-center">
             <h2 class="title">Our Best Price Plan</h2>
-            <hr class="separator">
+            <hr class="separator-middle">
             <p class="sub-title">We provide best price plan for our customer check the list now and select now plan.</p>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 mb-5 mb-lg-0">
+          <div class="col-lg-4 mb-5 mb-lg-0 d-flex align-items-stretch justify-content-center">
             <div class="card card-pricess basic">
               <div class="card-body card-body-prices text-center">
                 <h5 class="card-title title-prices">Basic</h5>
@@ -255,11 +255,11 @@
                     <li class="text-secondary"><i class="fas fa-check text-custom mr-3 mb-4"></i>Email support</li>
                   </ul>
                 </div>
-                <a href="#" class="btn btn-primary">Purchase</a>
+                <a href="#" class="btn btn-primary btn-purchase">Purchase</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-5 mb-lg-0">
+          <div class="col-lg-4 mb-5 mb-lg-0 d-flex align-items-stretch justify-content-center">
             <div class="card card-pricess premium">
               <div class="card-body card-body-prices text-center">
                 <h5 class="card-title title-prices">Premium</h5>
@@ -272,13 +272,14 @@
                     <li class="text-secondary"><i class="fas fa-check text-custom mr-3 mb-4"></i>One User</li>
                     <li class="text-secondary"><i class="fas fa-check text-custom mr-3 mb-4"></i>Ui elements 1000</li>
                     <li class="text-secondary"><i class="fas fa-check text-custom mr-3 mb-4"></i>Email support</li>
+                    <li class="text-secondary"><i class="fas fa-check text-custom mr-3 mb-4"></i>Phone Support</li>
                   </ul>
                 </div>
-                <a href="#" class="btn btn-primary">Purchase</a>
+                <a href="#" class="btn btn-primary btn-purchase">Purchase</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 d-flex align-items-stretch justify-content-center">
             <div class="card card-pricess profesional">
               <div class="card-body card-body-prices text-center">
                 <h5 class="card-title title-prices">Profesional</h5>
@@ -293,20 +294,16 @@
                     <li class="text-secondary"><i class="fas fa-check text-custom mr-3 mb-4"></i>Email support</li>
                   </ul>
                 </div>
-                <a href="#" class="btn btn-primary">Purchase</a>
+                <a href="#" class="btn btn-primary btn-purchase">Purchase</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-12 monthly-switch">
-          <div class="df-switch">
-            <button type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="false"
-              autocomplete="off">
-              <div class="handle"></div>
-            </button>
-          </div>
+        <div class="df-switch">
+          <button type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="false">
+            <div class="handle"></div>
+          </button>
         </div>
-      </div>
       </div>
     </section>
     <!-- End Section Prices -->
@@ -325,7 +322,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="review-bg text-center">
-                  <img src="assets/img/testimonial-1.png" alt="AppWay" class="review-thumb">
+                  <img src="img/testimonial-1.png" alt="AppWay" class="review-thumb">
                   <p class="sub-title">"We dont take ourself too seriously, but seriously enough to ensure we're
                     creating
                     the best product and experience for our customers. I feel like Help Scout does the same."</p>
@@ -336,7 +333,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="review-bg text-center">
-                  <img src="assets/img/testimonial-2.png" alt="AppWay" class="review-thumb">
+                  <img src="img/testimonial-2.png" alt="AppWay" class="review-thumb">
                   <p class="sub-title">"We dont take ourself too seriously, but seriously enough to ensure we're
                     creating
                     the best product and experience for our customers. I feel like Help Scout does the same."</p>
@@ -347,7 +344,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="review-bg text-center">
-                  <img src="assets/img/testimonial-2.png" alt="AppWay" class="review-thumb">
+                  <img src="img/testimonial-2.png" alt="AppWay" class="review-thumb">
                   <p class="sub-title">"We dont take ourself too seriously, but seriously enough to ensure we're
                     creating
                     the best product and experience for our customers. I feel like Help Scout does the same."</p>
@@ -368,15 +365,15 @@
       <div class="jumbotron app jumbotron-fluid">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-6 order-lg-1 order-2 mt-5">
+            <div class="col-12 col-lg-6 order-lg-1 order-1 mt-0 mt-lg-5">
               <h1 class="title-app">Get The App Now</h1>
-              <hr class="separator">
+              <hr class="separator separator-white">
               <p class="sub-title-app">Have you heard the expression, <br>
                 "Do not count your chicken before they hatch?" Maybe an older, wiser individual
               </p>
-              <div class="row text-center">
-                <div class="col-12 col-lg-5">
-                  <button type="button" class="btn btn-primary mt-5 button-app text-left" data-toggle="modal"
+              <div class="row text-center justify-content-md-center justify-content-lg-start">
+                <div class="col-12 col-md-4 col-lg-5">
+                  <a href="#" class="btn btn-primary mt-5 button-app text-left" data-toggle="modal"
                     data-target="#modalApp">
                     <div class="row justify-content-between">
                       <div class="col-3 col-lg-3"><i class="fab fa-apple fa-3x"></i></div>
@@ -384,10 +381,10 @@
                         <br> App Store
                       </div>
                     </div>
-                  </button>
+                  </a>
                 </div>
-                <div class="col-lg-5">
-                  <button type="button" class="btn btn-primary mt-5 button-app text-left" data-toggle="modal"
+                <div class="col-md-4 col-lg-5">
+                  <a href="#" class="btn btn-primary mt-5 button-app text-left" data-toggle="modal"
                     data-target="#modalGoo">
                     <div class="row justify-content-between">
                       <div class="col-3 col-lg-3"><i class="fab fa-android fa-3x"></i></div>
@@ -395,36 +392,37 @@
                         <br> Google Play
                       </div>
                     </div>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="col-8 col-lg-6 order-lg-2 order-1 text-center">
-              <img src="assets/img/phone-4.png" alt="AppWay" class="img-fluid phone-app-1">
-              <img src="assets/img/phone-5.png" alt="AppWay" class="img-fluid phone-app-2">
+            <div class="col-8 col-lg-6 order-lg-2 order-2 text-center mt-5 mt-lg-0">
+              <img src="img/phone-4.png" alt="AppWay" class="img-fluid phone-app-1">
+              <img src="img/phone-5.png" alt="AppWay" class="img-fluid phone-app-2">
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Modal Button -->
-    <div class="modal fade" id="modalApp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalApp" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Download on the App Store</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <div class="modal-header bg-custom">
+            <h5 class="modal-title text-white" id="exampleModalLabel">Download on the App Store</h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body bg-custom">
             <div class="row justify-content-center">
               <div class="col-8 col-lg-5 mb-3 mb-lg-0">
-                <img src="assets/img/phone-4.png" alt="AppWay" class="img-fluid">
+                <img src="img/phone-4.png" alt="AppWay" class="img-fluid">
               </div>
               <div class="col-12 col-lg-7">
-                <h2 class="title">Get the App Now</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam dolorem fugit beatae nihil nulla
+                <h2 class="title text-white">Get the App Now</h2>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam dolorem fugit
+                  beatae nihil nulla
                   asperiores iste veritatis ab autem aut consequuntur adipisci ducimus, amet, exercitationem error.
                   Voluptate vero cumque corporis!
                 </p>
@@ -432,36 +430,33 @@
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-          </div>
         </div>
       </div>
     </div>
-    <div class="modal fade" id="modalGoo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalGoo" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Download on the Google Play</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <div class="modal-header bg-custom">
+            <h5 class="modal-title text-white" id="exampleModalLabel">Download on the Google Play</h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body bg-custom">
             <div class="row justify-content-center">
               <div class="col-8 col-lg-5 mb-3 mb-lg-0">
-                <img src="assets/img/phone-4.png" alt="AppWay" class="img-fluid">
+                <img src="img/phone-4.png" alt="AppWay" class="img-fluid">
               </div>
               <div class="col-12 col-lg-7">
-                <h2 class="title">Get the App Now</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam dolorem fugit beatae nihil nulla
+                <h2 class="title text-white">Get the App Now</h2>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam dolorem fugit
+                  beatae nihil nulla
                   asperiores iste veritatis ab autem aut consequuntur adipisci ducimus, amet, exercitationem error.
                   Voluptate vero cumque corporis!
                 </p>
                 <a href="#" class="btn btn-primary"><i class="fab fa-android mr-2"></i>Download Now</a>
               </div>
             </div>
-          </div>
-          <div class="modal-footer">
           </div>
         </div>
       </div>
@@ -480,7 +475,7 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="card card-news">
-              <img src="assets/img/news-1.jpg" class="card-img-top" alt="News">
+              <img src="img/news-1.jpg" class="card-img-top" alt="News">
               <div class="card-body">
                 <p class="card-text text-muted"><i class="fas fa-calendar-alt"></i> January 11, 2019</p>
                 <h5 class="card-title h4">Design your apps in your own way Business Strategis</h5>
@@ -490,7 +485,7 @@
           </div>
           <div class="col-lg-4">
             <div class="card card-news">
-              <img src="assets/img/news-2.jpg" class="card-img-top" alt="News">
+              <img src="img/news-2.jpg" class="card-img-top" alt="News">
               <div class="card-body">
                 <p class="card-text text-muted"><i class="fas fa-calendar-alt"></i> January 11, 2019</p>
                 <h5 class="card-title h4">Design your apps in your own way Business Strategis</h5>
@@ -500,7 +495,7 @@
           </div>
           <div class="col-lg-4">
             <div class="card card-news">
-              <img src="assets/img/news-3.jpg" class="card-img-top" alt="News">
+              <img src="img/news-3.jpg" class="card-img-top" alt="News">
               <div class="card-body">
                 <p class="card-text text-muted"><i class="fas fa-calendar-alt"></i> January 11, 2019</p>
                 <h5 class="card-title h4">Design your apps in your own way Business Strategis</h5>
@@ -516,14 +511,18 @@
     <section id="Subscribe">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6"><img src="assets/img/subscribe-1.png" alt="Subscribe" class="img-fluid"></div>
-          <div class="col-lg-6">
-            <h2 class="title">Subscribe our Newsletter</h2>
-            <hr class="separator">
-            <p class="sub-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, assumenda? Harum
-              voluptatum eaque dolore. Incidunt, ipsam.</p>
-            <input class="form-control form-control-lg form-subscribe" type="email" placeholder="Enter Your Email">
-            <a href="#" class="btn btn-primary mt-4">Subscribe Now</a>
+          <div class="col-lg-6 order-lg-1 order-2 mt-5 mt-lg-0"><img src="img/subscribe-1.png" alt="Subscribe"
+              class="img-fluid">
+          </div>
+          <div class="col-lg-6 order-lg-2 order-1">
+            <form action="" method="post">
+              <h2 class="title">Subscribe our Newsletter</h2>
+              <hr class="separator">
+              <p class="sub-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, assumenda? Harum
+                voluptatum eaque dolore. Incidunt, ipsam.</p>
+              <input class="form-control form-control-lg form-subscribe" type="email" placeholder="Enter Your Email">
+              <button type="submit" class="btn btn-primary mt-4">Subscribe Now</button>
+            </form>
           </div>
         </div>
       </div>
@@ -534,21 +533,20 @@
     <div class="footer">
       <div class="container">
         <div class="row align-content-center">
-          <div class="col-lg-4 order-1 order-lg-0 mt-4">
-            <img src="assets/img/footer-logo.png" alt="AppWay">
+          <div class="col-md-12 col-lg-4 order-0 order-lg-0 mt-4">
+            <img src="img/footer-logo.png" alt="AppWay">
             <p class="footer-info sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
               voluptates ipsa quod repudiandae architecto a quaerat. Ipsum temporibus incidunt aperiam dolore deleniti
               obcaecati non quaerat asperiores.
             </p>
-            <br>
-            <p class="text-custom">Follow Us:
+            <p class="text-custom pt-4">Follow Us:
               <a href="#" class="footer-social"><i class="fab fa-facebook-f ml-4 mx-2"></i></a>
               <a href="#" class="footer-social"><i class="fab fa-twitter mx-2"></i></a>
               <a href="#" class="footer-social"><i class="fab fa-skype mx-2"></i></a>
               <a href="#" class="footer-social"><i class="fab fa-linkedin-in mx-2"></i></a>
             </p>
           </div>
-          <div class="col-lg-3 footer-col mt-4">
+          <div class="col-md-5 col-lg-3 footer-col order-2 order-md-1 order-lg-1 mt-4">
             <h2 class="footer-title">Support</h2>
             <hr class="separator">
             <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary"> Contact Us</a>
@@ -564,7 +562,7 @@
             <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary">Profesional
                 Services</a></p>
           </div>
-          <div class="col-lg-2 footer-col mt-4">
+          <div class="col-md-3 col-lg-2 footer-col order-3 order-md-2 order-lg-2 mt-4">
             <h2 class="footer-title">Links</h2>
             <hr class="separator">
             <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary">Home</a></p>
@@ -577,23 +575,18 @@
             <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary">News</a></p>
             <p class="sub-title"><i class="fas fa-chevron-right"></i> <a href="#" class="text-secondary">Contact</a></p>
           </div>
-          <div class="col-lg-3 footer-col mt-4">
+          <div class="col-md-4 col-lg-3 footer-col order-1 order-md-3 order-lg-3 mt-4">
             <h2 class="footer-title">Contact Info</h2>
             <hr class="separator">
             <p class="sub-title"><i class="fas fa-map-marker-alt mr-3 text-custom"></i>25 Beford St.</p>
             <p class="sub-title"><i class="mx-3"></i>New York City, N.Y.</p>
-            <br>
-            <p class="sub-title"><i class="fas fa-phone-volume mr-3 text-custom"></i>(+066) 518-457-5181</p>
+            <p class="sub-title pt-5"><i class="fas fa-phone-volume mr-3 text-custom"></i>(+066) 518-457-5181</p>
             <p class="sub-title"><i class="fas fa-phone-volume mr-3 text-custom"></i>(+066) 518-457-5182</p>
             <p class="sub-title"><i class="fas fa-envelope mr-3 text-custom"></i>info@example.com</p>
           </div>
         </div>
-        <div class="row justify-content-center copyright">
-          <div class="col-lg-12 text-center">
-            <hr>
-            <p class="text-custom">&#169; 2020 appway. All Right Reserved</p>
-          </div>
-        </div>
+        <hr>
+        <p class="text-custom text-center">&#169; 2020 appway. All Right Reserved</p>
       </div>
     </div>
   </footer>
@@ -603,11 +596,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="vendor/lightcase-2.5.0/src/js/lightcase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/lightcase.js"></script>
   <!-- Swiper Js -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

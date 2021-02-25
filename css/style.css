@@ -2,11 +2,10 @@
 
 body{
   font-family: 'Ubuntu', sans-serif;
-  padding-top: 70px;
 }
 
 html, body, header{
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   padding-right: 0 !important;
 }
 
@@ -190,7 +189,7 @@ html, body, header{
   margin-top: 50px;
   font-size: 24px;
   font-weight: 500;
-  line-height: 1.4em;
+  line-height: 32px;
   color: white;
 }
 
@@ -198,29 +197,39 @@ html, body, header{
   margin-top: 25px;
   color: white;
   font-weight: 500;
-  line-height: 2em;
+  line-height: 32px;
 }
 
 .hero .container{
   position: relative;
   z-index: 1;
+  margin-top: 100px;
+}
+
+.hero-text{
+  display: block;
 }
 
 .hero-img{
-  position: relative;
+  position: unset;
+  top: 0;
+  left: 50%;
+  top: -20%;
 }
 
-.phone-1{
-  position: relative;
-  z-index: 2;
-  width: 25vmax;
-}
+/* .phone-1{
+  width: 100%;
+} */
 
-.phone-2{
+/* .phone-2{
   position: absolute;
   left: 21vmax;
   z-index: 1;
   width: 25vmax;
+} */
+
+.phone-2{
+  transform: translateX(-20%);
 }
 
 /* Features */
@@ -235,7 +244,7 @@ html, body, header{
 }
 
 .card-features{
-  line-height: 2em;
+  line-height: 32px;
   transition: all .3s ease;
 }
 
@@ -258,6 +267,10 @@ html, body, header{
   font-size: 14px;
 }
 
+.amz-img{
+  margin-bottom: 35px;
+}
+
 /* Features Second */
 #Features-second{
   background-image: url(../img/bg-shap-1.png);
@@ -270,7 +283,56 @@ html, body, header{
 .card-features-second{
   border-radius: 0;
   padding: 60px 0;
-  line-height: 2em;
+  line-height: 32px;
+  transition: all .3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-features-second:hover .text-custom{
+  position: relative;
+  z-index: 10;
+  color: #FFFFFF;
+  transition: all .3s ease;
+}
+
+.card-features-second:hover .text-center{
+  position: relative;
+  z-index: 10;
+  color: #FFFFFF;
+  transition: all .3s ease;
+}
+
+.card-features-second .card-text{
+  position: relative;
+  z-index: 100;
+}
+
+.card-features-second::before{
+  content: '';
+  z-index: 5;
+  position: absolute;
+  top: -200px;
+  left: -50px;
+  right: -50px;
+  background-color: #6046B1;
+  border-radius: 50%;
+  height: 350px;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.card-features-second::after{
+  content: '';
+  z-index: 2;
+  position: absolute;
+  top: -100px;
+  left: -50px;
+  right: -50px;
+  background-color: #573CAD;
+  border-radius: 50%;
+  height: 350px;
+  opacity: 0;
   transition: all .3s ease;
 }
 
@@ -280,13 +342,14 @@ html, body, header{
   transition: all .3s ease;
 }
 
-.card-features-second:hover .text-custom{
-  color: #FFFFFF;
+.card-features-second:hover::before{
+  opacity: 1;
   transition: all .3s ease;
 }
 
-.amz-img{
-  margin-bottom: 35px;
+.card-features-second:hover::after{
+  opacity: 1;
+  transition: all .3s ease;
 }
 
 /* Mobile Section */
@@ -552,13 +615,13 @@ html, body, header{
 }
 
 .btn-toggle {
-  margin: 0 4rem;
+  margin: 0 64px;
   padding: 0;
   position: relative;
   border: 1px solid #4527A4;
-  height: 2.5rem;
-  width: 6rem;
-  border-radius: 1.5rem;
+  height: 40px;
+  width: 96px;
+  border-radius: 24px;
   color: #6b7381;
   background: #ffffff;
 }
@@ -572,8 +635,8 @@ html, body, header{
 
 .btn-toggle:before,
 .btn-toggle:after {
-  line-height: 1.5rem;
-  width: 4rem;
+  line-height: 24px;
+  width: 64px;
   text-align: center;
   font-weight: 600;
   position: absolute;
@@ -584,23 +647,23 @@ html, body, header{
 }
 .btn-toggle:before {
   content: 'Monthly';
-  top: 0.5rem;
-  left: -5.7rem;
+  top: 8px;
+  left: -91px;
 }
 .btn-toggle:after {
   content: 'Yearly';
-  top: 0.5rem;
-  right: -5rem;
+  top: 8px;
+  right: -91px;
   opacity: 0.5;
 }
 
 .btn-toggle > .handle {
   position: absolute;
-  top: 0.1em;
-  left: 0.2rem;
-  width: 2.125rem;
-  height: 2.125rem;
-  border-radius: 1.125rem;
+  top: 2px;
+  left: 3px;
+  width: 32.5px;
+  height: 32.5px;
+  border-radius: 18px;
   background: #4527A4;
   transition: left 0.25s;
 }
@@ -608,7 +671,7 @@ html, body, header{
   transition: background-color 0.25s;
 }
 .btn-toggle.active > .handle {
-  left: 3.6rem;
+  left: 57px;
   transition: left 0.25s;
 }
 .btn-toggle.active:before {
@@ -672,7 +735,7 @@ html, body, header{
 
 .review-bg .sub-title{
   padding-top: 20px;
-  line-height: 2em;
+  line-height: 32px;
 }
 
 .review-bg .separator{
@@ -711,7 +774,7 @@ html, body, header{
 }
 
 .separator-white{
-  margin: 1rem 0;
+  margin: 16px 0;
   border-color: #FFFFFF;
 }
 
@@ -722,7 +785,7 @@ html, body, header{
 .sub-title-app{
   color: #FFFFFF;
   font-size: 17px;
-  line-height: 2em;
+  line-height: 32px;
 }
 
 .app .btn{
@@ -756,6 +819,9 @@ html, body, header{
 
 .card-news{
   box-shadow: none;
+}
+
+.card-img{
   overflow: hidden;
 }
 
@@ -764,7 +830,7 @@ html, body, header{
 }
 
 .card-news .card-body{
-  padding: 1.5rem 0;
+  padding: 24px 0;
 }
 
 .card-news:hover img{
@@ -775,7 +841,7 @@ html, body, header{
 /* Section Subscribe */
 .form-subscribe{
   border-radius: 30px;
-  padding: 1.5em;
+  padding: 24px;
 }
 
 /* Footer */
@@ -788,7 +854,7 @@ html, body, header{
 }
 
 .footer-info{
-  line-height: 2em;
+  line-height: 32px;
 }
 
 .footer-title{
@@ -846,10 +912,6 @@ html, body, header{
 
 /* Responsive Desktop */
 @media (min-width: 992px) {
-  /* Body */
-  body{
-    padding-top: 120px;
-  }
   /* Navbar */
   .navbar{
     padding-top: 50px;
@@ -863,21 +925,28 @@ html, body, header{
   /* Hero */
   .hero{
     padding-bottom: 100px;
-    margin-top: -160px;
     height: 1030px;
+    background-size: cover;
   }
 
   .hero-title{
     font-size: 48px;
+    line-height: 67px;
   }
 
   .hero .container{
     margin-top: 270px;
   }
 
+  .hero-img{
+    position: absolute;
+    align-items: flex-start;
+    max-width: 27vmax;
+  }
+
   /* Section Features */
   #Features{
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 80px;
   }
 
@@ -902,7 +971,7 @@ html, body, header{
 
   /* easy */
   #Easy{
-  padding-bottom: 80px;
+  padding-bottom: 120px;
   }
   
   .easy-img{
@@ -912,11 +981,8 @@ html, body, header{
   /* Section Video */
   .video-bg{
     border-radius: 0 60px 60px 0;
+    overflow: hidden;
     height: 750px;
-  }
-
-  .video-bg img{
-    border-radius: 0 60px 60px 0;
   }
 
   .video-bg::after{
@@ -950,18 +1016,21 @@ html, body, header{
   }
 
   .basic::after{
-    left: -60px;
-    transform: scale(1);
+    bottom: -90px;
+    left: -50px;
+    transform: scale(0.8);
   }
 
   .premium::after{
-    left: -60px;
-    transform: scale(1);
+    bottom: -90px;
+    left: -50px;
+    transform: scale(0.8);
   }
 
   .profesional::after{
-    left: -60px;
-    transform: scale(1);
+    bottom: -90px;
+    left: -50px;
+    transform: scale(0.8);
   }
 
   /* Review Section */

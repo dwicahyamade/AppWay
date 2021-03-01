@@ -254,9 +254,12 @@ html, body, header{
   color: #FFFFFF;
 }
 
+.card-features .text-custom{
+  transition: all .3s ease;
+}
+
 .card-features:hover .text-custom{
   color: #FFFFFF;
-  transition: all .3s ease;
 }
 
 .card-title{
@@ -289,11 +292,14 @@ html, body, header{
   overflow: hidden;
 }
 
+.card-features-second .text-custom{
+  transition: all .3s ease;
+}
+
 .card-features-second:hover .text-custom{
   position: relative;
   z-index: 10;
   color: #FFFFFF;
-  transition: all .3s ease;
 }
 
 .card-features-second:hover .text-center{
@@ -796,6 +802,7 @@ html, body, header{
 .button-app{
   background-color: transparent;
   border-radius: 10px;
+  width: 100%;
 }
 
 .phone-app-1{
@@ -806,7 +813,7 @@ html, body, header{
 
 .phone-app-2{
   position: absolute;
-  left: 100px;
+  left: 97px;
   bottom: 0;
   z-index: 1;
 }
@@ -924,8 +931,7 @@ html, body, header{
   
   /* Hero */
   .hero{
-    padding-bottom: 100px;
-    height: 1030px;
+    padding-bottom: 300px;
     background-size: cover;
   }
 
